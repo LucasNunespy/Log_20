@@ -1,0 +1,6 @@
+# Variáveis de ambiente / dados sensíveis
+.env
+
+# Arquivos gerados automaticamente pelo Python
+__pycache__/
+*.pyc

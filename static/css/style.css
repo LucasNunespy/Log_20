@@ -1,0 +1,214 @@
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0f2747;
+}
+
+
+/* =========================
+   PÁGINA DE LOGIN
+========================= */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #ffffff 0%,
+            #eef7ff 45%,
+            #dceeff 100%
+        );
+}
+
+
+/* =========================
+   CARD DO LOGIN
+========================= */
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+
+    padding: 38px 32px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid #d9e7f5;
+    border-radius: 14px;
+
+    box-shadow: 0 12px 35px rgba(15, 39, 71, 0.12);
+}
+
+
+/* =========================
+   LOG 20
+========================= */
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    margin: 0;
+
+    font-size: 36px;
+    font-weight: 800;
+
+    color: #0f2747;
+}
+
+.login-header h1::first-letter {
+    color: #0f2747;
+}
+
+.login-header p {
+    margin: 10px 0 0;
+
+    font-size: 16px;
+    color: #526b89;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #243b5a;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    font-size: 16px;
+
+    color: #0f2747;
+    background-color: #ffffff;
+
+    border: 1px solid #cbdced;
+    border-radius: 7px;
+
+    outline: none;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #8da2b8;
+}
+
+.form-group input:focus {
+    border-color: #0875e1;
+
+    box-shadow: 0 0 0 3px rgba(8, 117, 225, 0.12);
+}
+
+
+/* =========================
+   BOTÃO ENTRAR
+========================= */
+
+.login-button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 4px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #0875e1;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.login-button:hover {
+    background-color: #0566c5;
+}
+
+.login-button:active {
+    transform: scale(0.99);
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .login-page {
+        padding: 16px;
+    }
+
+    .login-container {
+        max-width: 100%;
+
+        padding: 30px 22px;
+
+        border-radius: 12px;
+    }
+
+    .login-header {
+        margin-bottom: 26px;
+    }
+
+    .login-header h1 {
+        font-size: 32px;
+    }
+
+    .form-group input {
+        padding: 12px;
+    }
+
+    .login-button {
+        padding: 12px;
+    }
+}
