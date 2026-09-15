@@ -6,27 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Log 20 | Início</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Log 20</h1>
+    <div class="dashboard">
 
-        <nav>
-            <a href="{{ url_for('index') }}">Início</a>
-            <a href="{{ url_for('auth.logout') }}">Sair</a>
-        </nav>
-    </header>
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
 
-    <main>
+            <!-- LOGO / NOME DO SISTEMA -->
+           <div class="sidebar-header">
 
-        <section>
-            <h2>Página principal</h2>
-            <p>Bem-vindo ao sistema Log 20.</p>
-        </section>
+                <div class="brand-icon">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
 
-    </main>
+                <h1>Log 20</h1>
+
+            </div>
+
+            <!-- NAVEGAÇÃO -->
+            <nav class="sidebar-menu">
+
+                <span class="menu-title">Menu</span>
+
+                <a href="{{ url_for('index') }}" class="menu-item active">
+                    Início
+                </a>
+
+                <a href="#" class="menu-item">
+                    Função 1
+                </a>
+
+                <a href="#" class="menu-item">
+                    Função 2
+                </a>
+
+                <a href="#" class="menu-item">
+                    Função 3
+                </a>
+
+                <a href="#" class="menu-item">
+                    Função 4
+                </a>
+
+                <a href="#" class="menu-item">
+                    Função 5
+                </a>
+
+                <a href="#" class="menu-item">
+                    Função 6
+                </a>
+
+                <a href="#" class="menu-item">
+                    Função 7
+                </a>
+
+            </nav>
+
+
+            <!-- SAIR -->
+            <div class="sidebar-footer">
+
+                <a href="{{ url_for('auth.logout') }}" class="menu-item">
+                    Sair
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+
+            <!-- CABEÇALHO -->
+            <header class="content-header">
+
+                <div class="header-text">
+                    <h2>Dashboard</h2>
+                    <p>Visão geral da operação</p>
+                </div>
+
+            </header>
+
+
+            <!-- ÁREA PARA AS FUNCIONALIDADES -->
+            <section class="dashboard-content">
+
+                <!--
+                    Futuramente:
+
+                    cards
+                    tabelas
+                    ranking
+                    gráficos
+                    filtros
+                    etc.
+
+                    serão adicionados aqui conforme
+                    definirmos as funcionalidades.
+                -->
+
+            </section>
+
+        </main>
+
+    </div>
 
 </body>
 

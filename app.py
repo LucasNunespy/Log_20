@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from config import Config
 from database.db import db
 from routes.auth_routes import auth
@@ -11,7 +11,9 @@ db.init_app(app)
 
 app.register_blueprint(auth)
 
-
+@app.route("/")
+def home():
+    return redirect(url_for("auth.login"))
 
 @app.route("/index")
 def index():

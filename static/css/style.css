@@ -8,10 +8,9 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     color: #0f2747;
 }
-
 
 /* =========================
    PÁGINA DE LOGIN
@@ -211,4 +210,134 @@ body {
     .login-button {
         padding: 12px;
     }
+}
+
+
+
+/* =========================
+   PÁGINA PRINCIPAL
+========================= */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+
+    background-color: #0f2747;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px 18px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px 28px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0875e1;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.sidebar-header h1 {
+    margin: 0;
+
+    font-size: 26px;
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.menu-title {
+    margin: 0 0 8px 12px;
+
+    font-size: 12px;
+    color: #8da2b8;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-item {
+    display: block;
+
+    padding: 13px 14px;
+
+    color: #dceeff;
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.menu-item.active {
+    background-color: #0875e1;
+    color: #ffffff;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+}
+
+.main-content {
+    flex: 1;
+
+    padding: 36px 40px;
+
+    background-color: #f4f8fc;
+}
+
+.content-header {
+    margin-bottom: 30px;
+}
+
+.header-text h2 {
+    margin: 0 0 8px;
+
+    font-size: 30px;
+}
+
+.header-text p {
+    margin: 0;
+
+    color: #526b89;
+}
+
+.dashboard-content {
+    min-height: 600px;
+
+    padding: 24px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d9e7f5;
+    border-radius: 14px;
 }
