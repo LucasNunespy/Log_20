@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}
+Log 20 | Gerenciar Motoristas
+{% endblock %}
+
+
+{% block content %}
+
+<header class="content-header">
+
+    <div class="header-text">
+        <h2>Gerenciar Motoristas</h2>
+        <p>Cadastro e gerenciamento dos motoristas</p>
+    </div>
+
+</header>
+
+
+<section class="dashboard-content">
+
+    <div class="motoristas-card">
+
+        <div class="motoristas-card-header">
+            <h3>Cadastrar Motorista</h3>
+            <p>Adicione um novo motorista ao sistema.</p>
+        </div>
+
+        <form id="form-motorista" class="motorista-form">
+
+            <div class="form-group">
+
+                <label for="matricula">
+                    Matrícula
+                </label>
+
+                <input
+                    type="text"
+                    id="matricula"
+                    name="matricula"
+                    placeholder="Digite a matrícula"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="nome">
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite o nome do motorista"
+                    required
+                >
+
+            </div>
+
+
+            <button type="submit" class="btn-primary">
+                Cadastrar Motorista
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}
