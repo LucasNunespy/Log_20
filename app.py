@@ -4,6 +4,10 @@ from database.db import db
 from routes.auth_routes import auth
 from routes.motoristas_routes import motoristas
 
+from models.motoristas import Motorista
+from models.mapas import Mapa
+from models.entregas import Entrega
+
 app = Flask(__name__)
 
 app.config.from_object(Config)
