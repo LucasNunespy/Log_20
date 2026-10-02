@@ -68,11 +68,8 @@ def cadastrar_motorista():
         }), 500
 
     return jsonify({
-    "id": novo_motorista.id,
-    "matricula": novo_motorista.matricula,
-    "nome": novo_motorista.nome,
-    "ativo": novo_motorista.ativo
-}), 201
+    "mensagem": "Motorista cadastrado com sucesso"
+    }), 201
 
 
 
@@ -192,12 +189,8 @@ def atualizar_motorista(id):
         }), 500
 
     return jsonify({
-        "id": motorista.id,
-        "matricula": motorista.matricula,
-        "nome": motorista.nome,
-        "ativo": motorista.ativo
-    }), 200
-
+    "mensagem": "Motorista atualizado com sucesso"
+}), 200
 
 
 
@@ -242,8 +235,5 @@ def atualizar_status_motorista(id):
         }), 500
 
     return jsonify({
-        "id": motorista.id,
-        "matricula": motorista.matricula,
-        "nome": motorista.nome,
-        "ativo": motorista.ativo
+        "mensagem": "Status do motorista atualizado com sucesso"
     }), 200
