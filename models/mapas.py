@@ -12,8 +12,8 @@ class Mapa(db.Model):
         db.ForeignKey("motoristas.id"),
         nullable=False
     )
-    km_previsto = db.Column(db.Numeric(10, 2), nullable=False)
-
+    km_previsto = db.Column(db.Numeric(10, 2), nullable=True)
+    
     motorista = db.relationship(
     "Motorista",
     back_populates="mapas"
